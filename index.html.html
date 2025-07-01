@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BeliefsConnected</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --lavender: #e9dffc;
+      --light-beige: #FFF7F0;
+      --deep-purple: #9c88ff;
+      --soft-purple: #d7c8f9;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--light-beige);
+      color: var(--text);
+    }
+
+    header {
+      text-align: center;
+      padding: 0;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-bottom: 5px solid var(--soft-purple);
+    }
+
+    nav {
+      background: var(--lavender);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 2px solid var(--soft-purple);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--deep-purple);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      border: 2px solid #9C88FF;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: var(--deep-purple);
+      text-align: center;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1.5px solid var(--soft-purple);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--deep-purple);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #7a6de3;
+      transform: scale(1.02);
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .image-card {
+      background: var(--lavender);
+      padding: 1rem;
+      border-radius: 16px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--lavender);
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 2px solid var(--soft-purple);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .image-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Banner -->
+  <header>
+    <img src="beliefsconnected%20posts/banner.png" alt="BeliefsConnected banner" class="hero-image" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
+      <a href="#submit">Submit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>About</h2>
+      <p>BeliefsConnected is a student-led space for uniting people across different religious and cultural backgrounds. We highlight voices, stories, and shared values through art, writing, and honest conversation.</p>
+    </section>
+
+    <section id="mission" data-aos="fade-up">
+      <h2>Mission</h2>
+      <p>Our mission is to bridge divides by helping youth reflect on their faith, identity, and community. Through creativity and kindness, we aim to connect — not divide.</p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Featured Moments</h2>
+      <div class="image-row">
+        <div class="image-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="BeliefsConnected%20posts/featured1.jpg" alt="faith moment" />
+          <p><strong>Breaking Barriers Workshop:</strong> Hosted two workshops at a middle school and presented about the importance of cultural understanding and faith-based community building.</p>
+          <p>Youth Faith Workshops</p>
+        </div>
+        <div class="image-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="beliefsconnected%20posts/featured2.png" alt="art culture" />
+          <p>Issue 01: Solace</p>
+        </div>
+        <div class="image-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="beliefsconnected%20posts/featured3.png" alt="Real Stories" />
+          <p>Speak up Challenge</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="submit" data-aos="fade-up">
+      <h2>Submit to Our Magazine</h2>
+      <p>Submit to our newest joint issue: <em>One Ummah</em> with PurelyShelvedMagazine. Send us your poem, story, art, or reflection by July 25. Selected pieces will be published in our upcoming magazine edition!</p>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="submission">Your Submission</label>
+        <textarea id="submission" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:faithtalksorganization@gmail.com">faithtalksorganization@gmail.com</a></p>
+      <p>Follow us: @Beliefsconnected on Instagram</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 BeliefsConnected. Built with heart and harmony.
+  </footer>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
